@@ -1,13 +1,29 @@
 #include<stdio.h>
 int main() {
-   printf("\nKich co cua kieu du lieu char la: %d", sizeof(char));
-   printf("\nKy tu: %c ";
-   printf("\nKich co cua kieu du lieu int la: %d", sizeof(int));
-   printf("\nSo nguyen: %d ");
-   printf("\nKich co cua kieu du lieu float la: %d", sizeof(float));
-   printf("\nSo thuc kieu float : %f");
-   printf("\nKich co cua kieu du lieu double la: %d", sizeof(double));
-   printf("\nSo thuc kieu double: %lf");
+ int d;
+ char ch;
+ double lf;
+ float f;
+   printf("/*===== Kich thuoc cua cac kieu du lieu ==========*\\n");
+   printf("\nKieu char: %d byte", sizeof(char));
+        printf("\nKy tu: ");
+        scanf("%c", &ch);
+   
+   printf("\nKieu int la: %d byte", sizeof(int));
+        printf("\nSo nguyen: ");
+        scanf("%d", &d);
+
+   printf("\nKieu float la: %f byte", sizeof(float));
+        printf("\nSo thuc kieu float: ");
+        scanf("%f", &f);
+   
+   printf("\nKieu double la: %lf byte", sizeof(double));
+        printf("\nSo thuc kieu double: ");
+        scanf("%lf",&lf);
+   
+   printf("\nKieu long int: %li byte", sizeof(long int));
+   printf("\nKieu long double: % byte", sizeof(long double));
+   
    
    return (0);
 }
